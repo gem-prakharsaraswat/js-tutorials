@@ -35,3 +35,17 @@ class Animal {
   console.log(myDog.name); // Output: "Buddy"
   console.log(myDog.species); // Output: "Dog"
   console.log(myDog.makeSound()); // Output: "Woof!"
+
+  //Destructuring Assignment
+const person = { name: "John", age: 30, country: "USA" };
+
+// Traditional way
+const name = person.name;
+const age = person.age;
+
+// Using destructuring
+const { name, age } = person;
+
+console.log(name); // Output: "John"
+console.log(age); // Output: 30
+
