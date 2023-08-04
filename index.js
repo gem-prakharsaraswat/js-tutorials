@@ -40,8 +40,8 @@ class Animal {
 const person = { name: "John", age: 30, country: "USA" };
 
 // Traditional way
-const name = person.name;
-const age = person.age;
+const name1 = person.name;
+const age1 = person.age;
 
 // Using destructuring
 const { name, age } = person;
