@@ -49,3 +49,29 @@ const { name, age } = person;
 console.log(name); // Output: "John"
 console.log(age); // Output: 30
 
+//useState in react
+
+// ParentComponent.js
+import React from 'react';
+import ChildComponent from './ChildComponent';
+
+class ParentComponent extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      greeting: 'Hello',
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <ChildComponent greeting={this.state.greeting} />
+      </div>
+    );
+  }
+}
+
+export default ParentComponent;
+
+
